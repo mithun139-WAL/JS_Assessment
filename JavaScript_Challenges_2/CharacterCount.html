@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Open Console</h1>
+    <script>
+      function findFreq(str, char) {
+        let res = 0;
+        str = str.toLowerCase();
+        for (let i = 0; i < str.length; i++) {
+          if (str.charAt(i) == char) res++;
+        }
+        return res;
+      }
+
+      console.log(
+        findFreq(
+          'How many times does the character occur in this sentence?',
+          'm'
+        )
+      );
+      console.log(
+        findFreq(
+          'How many times does the character occur in this sentence?',
+          'h'
+        )
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Open Console</h1>
+    <script>
+      function largestNumber(numbersArray) {
+        var largest = numbersArray[0];
+        for (var i = 0; i < numbersArray.length; i++) {
+          if (largest < numbersArray[i]) {
+            largest = numbersArray[i];
+          }
+        }
+        return largest;
+      }
+      const numArray1 = [1, 5, 7, 9];
+      const numArray2 = [-1, -5, 0, -100];
+      console.log(largestNumber(numArray1));
+      console.log(largestNumber(numArray2));
+    </script>
+  </body>
+</html>
