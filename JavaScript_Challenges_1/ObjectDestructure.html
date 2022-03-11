@@ -14,8 +14,9 @@
         age: 10,
         gender: 'm',
       };
-      const { name, ...rest } = person;
-      console.log(rest);
+      const { name: nameObj, age: ageObj } = person;
+      console.log(nameObj);
+      console.log(ageObj);
     </script>
   </body>
 </html>
